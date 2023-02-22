@@ -1,7 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
 }
+
+body {
+    overflow-x: hidden;
+    background-color:#1F3140 ;
+
+}
+
+section {
+    padding: 3.9rem 0;
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-size: 1.6rem;
+}
+
+.hero {
+    width: 100%;
+    height: 70vh;
+    background: url("../images/6357135f0cd96__950x512.webp") center no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.h2-sub {
+    font-size: 3rem;
+    font-family: 'Poppins', sans-serif;
+    color: #3bcc75;
+    font-weight: 600;
+    line-height: .4;
+}
+
+.fil {
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+
+.head {
+    color: #fff;
+    font-size: 3.7rem;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: .5rem;
+}
+
+.circle {
+    font-size: 1.5rem;
+    color: #3bcc75;
+    margin: 0 1.6rem;
+}
+
+.he-des h5 {
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin-bottom: 1.2rem;
+    letter-spacing: 3px;
+    margin-right: -3px;
+}
+
+.btn {
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-right: -2px;
+}
+
+.cta-btn {
+    font-size: 1.1rem;
+    background-color: #ffc845;
+    padding: 1.5rem 3rem;
+    color: #fff;
+    border-radius: .4rem;
+}
+.cta-btn:hover,
+.cta-btn:focus {
+    color: #fff;
+    background-color: #3bcc75;
+}
+
+
+.global {
+    text-align: center;
+    margin-top: 3.9rem;
+}
+
+.dis-sto .global {
+    margin-top: 6.9rem;
+}
+
+.global .circle {
+    color: #3bcc75;
+    margin: 2.4rem 0;
+}
+
+.hea-dark {
+    color: #252525;
+    letter-spacing: .7rem;
+    margin-right: -.7rem;
+}
+
+.global .h2-sub {
+    letter-spacing: -1px;
+    line-height: .42;
+}
+
+.res-info {
+    text-align: center;
+}
+
+.res-des {
+    margin-bottom: 3rem;
+}
+
+.res-des p {
+    line-height: 1.6;
+    margin-bottom: 2.4rem
+}
+
+
+/*menu*/
+
+.taste {
+    background: url("../img/Estadio_Monumental_Mundial_78.jpg") center no-repeat;
+    background-size: cover;
+}
+
+.bt {
+    min-height: 65vh;
+    display: flex;
+    align-items: center;
+}
+
+
+/*platillos*/
+
+.image-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1.5rem;
+}
+
+.disco .res-des {
+    padding-top: 3rem;
+    margin-bottom: 0;
+}
+
+.pb {
+    background: url("../img/estadio_azteca.jpg") center no-repeat;
+    background-size: cover;
+}
+
+
+.pb2 {
+    background: url("../img/estadio_lusail.avif") center no-repeat;
+    background-size: cover;
+}
+
 
 
 .header{
@@ -52,9 +226,13 @@
 
 .text-header {
     min-height: 100vh;
-    color: #f4f4f4;
+    color: white;
     font-family: 'Montserrat';
 
+}
+
+.text-header h2 span {
+    color: deepskyblue;
 }
 
 .text-header h2{
@@ -87,9 +265,6 @@ form {
     color: #f4f4f4;
 }
 
-body {
-    background-color:#1F3140 ;
-}
 
 main .sobre-nosotros{
     padding: 30px 0 60px 0;
@@ -258,6 +433,33 @@ footer {
 }
 
 @media screen and (min-width: 900px){
+    
+    .h2-sub {
+        font-size: 3rem;
+    }
+
+    .fil {
+        font-size: 3rem;
+    }
+    .head {
+        font-size: 4.7rem;
+        letter-spacing: .8rem;
+    }
+
+    .res-info {
+        display: flex;
+        align-items: center;
+    }
+
+    .res-info > div {
+        flex: 1;
+    }
+
+    .pad-rig {
+        padding-right: 7rem;
+    }
+
+    
     .footer-content {
         max-width: 77.5rem;
         margin: auto;
