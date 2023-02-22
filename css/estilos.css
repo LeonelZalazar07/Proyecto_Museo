@@ -128,7 +128,6 @@ p {
 }
 
 
-/*menu*/
 
 .taste {
     background: url("../img/Estadio_Monumental_Mundial_78.jpg") center no-repeat;
@@ -141,8 +140,6 @@ p {
     align-items: center;
 }
 
-
-/*platillos*/
 
 .image-group {
     display: grid;
@@ -329,7 +326,7 @@ main .sobre-nosotros{
 }
 
 @media screen and (max-width:500px){
-    /* ABOUT US */
+    
 
     .imagen-about-us{
         margin-bottom: 60px;
@@ -343,7 +340,7 @@ main .sobre-nosotros{
     
 } 
 
-/*footer*/
+
 footer {
     padding: 7.9rem 0;
     background-color: #121212;
