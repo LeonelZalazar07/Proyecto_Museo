@@ -24,12 +24,12 @@ $font_titulo4: 'Sarabun';
 }
 
 .encab_a{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://static.eldiario.es/clip/7fef3ee0-7d45-44c1-a380-1ae3f73ee848_16-9-discover-aspect-ratio_default_0.jpg); /* Establece un gradiente lineal semi-transparente sobre la imagen de fondo */
-    background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
-    background-position: center; /* Centra la imagen en el encabezado */
-    color: #fff; /* Establece el color de texto del encabezado en blanco */
-    text-align: center; /* Centra el texto en el encabezado */
-    padding: 100px 0; /* Agrega un relleno superior e inferior al encabezado */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://static.eldiario.es/clip/7fef3ee0-7d45-44c1-a380-1ae3f73ee848_16-9-discover-aspect-ratio_default_0.jpg); 
+    background-size: cover; 
+    background-position: center; 
+    color: #fff; 
+    text-align: center; 
+    padding: 100px 0; 
     height: 100vh;
     
     .titulo_arg{
@@ -37,8 +37,8 @@ $font_titulo4: 'Sarabun';
     color: white;
     font-size: 4rem;
     letter-spacing: .5rem;
-    margin: 0; /* Elimina el margen predeterminado */
-    font-size: 48px; /* Establece el tamaño de fuente del título */
+    margin: 0; 
+    font-size: 48px; 
     margin-top: 6rem;
     }
     
@@ -75,12 +75,12 @@ $font_titulo4: 'Sarabun';
 
 
 .monu{
-    background-image: linear-gradient(0deg, rgba(38,40,40,0) 0%, rgba(47,44,38,1) 95%), url('https://live.staticflickr.com/65535/49961648342_9d4d51acca_b.jpg'); /* Establece un gradiente lineal semi-transparente sobre la imagen de fondo */
-    background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
-    background-position: center; /* Centra la imagen en el encabezado */
-    color: #fff; /* Establece el color de texto del encabezado en blanco */
-    text-align: center; /* Centra el texto en el encabezado */
-    padding: 100px 0; /* Agrega un relleno superior e inferior al encabezado */
+    background-image: linear-gradient(0deg, rgba(38,40,40,0) 0%, rgba(47,44,38,1) 95%), url('https://live.staticflickr.com/65535/49961648342_9d4d51acca_b.jpg'); 
+    background-size: cover;
+    background-position: center; 
+    color: #fff; 
+    text-align: center; 
+    padding: 100px 0; 
     height: 500px;
     font-family: $font_titulo1;
     margin-top: 6rem;
@@ -89,13 +89,13 @@ $font_titulo4: 'Sarabun';
 
 
 .peru{
-    background-image:linear-gradient(90deg, rgba(0,0,0,1) 36%, rgba(0,0,0,0) 100%), url('https://media.tycsports.com/files/2020/11/17/154315/argentina-peru-rodulfo-manzo_862x485.jpg?v=8'); /* Establece un gradiente lineal semi-transparente sobre la imagen de fondo */
+    background-image:linear-gradient(90deg, rgba(0,0,0,1) 36%, rgba(0,0,0,0) 100%), url('https://media.tycsports.com/files/2020/11/17/154315/argentina-peru-rodulfo-manzo_862x485.jpg?v=8'); 
     background-size: cover;
     height: 800px;
-    background-position: center; /* Centra la imagen en el encabezado */
-    color: #fff; /* Establece el color de texto del encabezado en blanco */
-    text-align: left; /* Centra el texto en el encabezado */
-    padding: 100px 100; /* Agrega un relleno superior e inferior al encabezado */
+    background-position: center; 
+    color: #fff; 
+    text-align: left; 
+    padding: 100px 100; 
     font-family: $font_titulo4;
     overflow: auto;
     margin-top: 6rem;
@@ -115,7 +115,7 @@ $font_titulo4: 'Sarabun';
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        gap: 10px; /* Espacio entre las imágenes */
+        gap: 10px; 
         float: right;
         }
     .imagen {
@@ -145,10 +145,10 @@ $font_titulo4: 'Sarabun';
     background-image: url(https://img.asmedia.epimg.net/resizer/_BNgaSRSWiOAngzsJYbPweMCxeY=/1952x1098/cloudfront-eu-central-1.images.arcpublishing.com/diarioas/CC5WIMTZGJLIJNKMCC6I43VMMM.jpg); /* Establece un gradiente lineal semi-transparente sobre la imagen de fondo */
     background-size: cover;
     height: 800px;
-    background-position: center; /* Centra la imagen en el encabezado */
-    color: #fff; /* Establece el color de texto del encabezado en blanco */
-    text-align: left; /* Centra el texto en el encabezado */
-    padding: 100px 100; /* Agrega un relleno superior e inferior al encabezado */
+    background-position: center; 
+    color: #fff; 
+    text-align: left; 
+    padding: 100px 100; 
     font-family: $font_titulo4;
     overflow: auto;
    .cupdiego_text {
