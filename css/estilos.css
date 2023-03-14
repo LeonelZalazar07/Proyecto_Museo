@@ -51,7 +51,8 @@
 }
 
 .qatar {
-  background: url(../../img/pngtree-world-cup-2022-of-qatar-background-picture-image_1915185.jpg);
+  background: url("https://png.pngtree.com/background/20220806/original/pngtree-world-cup-2022-of-qatar-background-picture-image_1915185.jpg");
+  background-size: auto;
 }
 
 .encab_q {
