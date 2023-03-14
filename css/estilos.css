@@ -103,7 +103,7 @@
 }
 
 .lusail {
-  background-image: linear-gradient(0deg, rgba(38, 40, 40, 0) 0%, rgb(47, 44, 38) 95%), url("../../img/lusail.webp");
+  background-image: linear-gradient(0deg, rgba(38, 40, 40, 0) 0%, rgb(47, 44, 38) 95%), url("../img/lusail.webp");
   background-position: center;
   color: #fff;
   text-align: center;
@@ -164,7 +164,7 @@
 }
 
 .messi_cup {
-  background-image: url("./../../img/YUTXU4BC3TNJFYAXXWGOYK7LIY.webp");
+  background-image: url("../img/YUTXU4BC3TNJFYAXXWGOYK7LIY.webp");
   background-size: cover;
   height: 800px;
   background-position: center;
