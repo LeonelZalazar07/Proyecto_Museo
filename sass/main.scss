@@ -1,0 +1,746 @@
+@use './partials/Planificatuvisita';
+@use './partials/variables';
+@use './partials/Arg22';
+@use './partials/Arg86';
+@use './partials/Arg78';
+
+$font_titulo1: 'Poppins';
+$font_titulo2: 'Montserrat';
+$font_titulo3: 'Anton';
+$font_titulo4: 'Sarabun';
+
+@mixin tamanos ($ancho, $alto){
+    width: $ancho;
+    height: $alto;
+ } 
+ 
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/*Header*/
+.hero {
+    
+    @include tamanos(100%,70vh);
+    background: url("../images/6357135f0cd96__950x512.webp") center no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    text-align: center;
+        .head {
+        color: white;
+        font-size: 4rem;
+        font-family: $font_titulo2;
+        text-transform: uppercase;
+        font-weight: 900;
+        letter-spacing: 1.5rem;
+    }
+    }
+
+
+
+.header{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(../img/6357135f0cd96__950x512.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+    .bg-dark{
+    
+        position: fixed;
+        z-index: 20;
+        width: 100%;
+    }
+    
+}
+
+.header:before{
+        content:$font_titulo2;
+        width: 100%;
+        min-height: 100vh;
+        position: absolute;
+        top:0;
+        left: 0;
+       background: linear-gradient(rgba(255,255,255, .1), rgba(34,40,49, 1));
+    }
+    
+.navg{
+    a{
+        color: #f4f4f4!important;
+        font-family: $font_titulo2 ;
+        font-size: 23px;
+        padding: 10px 15px;
+        text-align: center;
+        text-transform: uppercase;
+        
+    }
+    a:hover{
+        background-color: deepskyblue;
+    }
+}
+
+.btn-yo{
+    padding: 7px 12px;
+    color: #f4f4f4;
+    background-color: deepskyblue;
+}
+
+.btn-yo:hover{
+    color: deepskyblue;
+    background-color: white;
+}
+
+.text-header {
+    min-height: 100vh;
+    color: white;
+    font-family: $font_titulo2;
+        h2{
+            font-family: $font_titulo3;
+            span {
+                color: deepskyblue;
+        }
+    }
+    span{
+        letter-spacing: 5px;
+        font-size: 1.3em;
+        font-family: $font_titulo2;
+        margin: 0 0 0 5px;
+    }
+    p{
+        font-size: 1em;
+    }
+}
+
+
+.btn {
+    padding: 1.1em 2em;
+    font-family: $font_titulo2;
+    background: none;
+    border: 2px solid #fff;
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s;
+    border-radius: 12px;
+    background-color: deepskyblue;
+    font-weight: bolder;
+    box-shadow: 0 2px 0 2px #000;
+   }
+   
+   .btn:before {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 220%;
+    background-color: goldenrod;
+    top: 50%;
+    transform: skewX(30deg) translate(-150%, -50%);
+    transition: all 0.6s;
+   }
+   
+   .btn:hover {
+    background-color: white;
+    color: deepskyblue;
+    box-shadow: 0 2px 0 2px #0d3b66;
+   }
+   
+   .btn:hover::before {
+    transform: skewX(30deg) translate(150%, -50%);
+    transition-delay: 0.1s;
+   }
+   
+   .btn:active {
+    transform: scale(0.9);
+   }
+
+
+form {
+    color: #f4f4f4;
+}
+
+main{
+    .sobre-nosotros{
+        padding: 30px 0 60px 0;
+    }
+}
+
+.sobre-nosotros{
+    .contenido-textos{
+    width: 48%;
+    }
+}
+
+
+.contenido-textos{
+    h3{
+        margin-bottom: 15px;
+        span{
+            background: deepskyblue;
+            color: white;
+            border-radius: 50%;
+            display: inline-block;
+            text-align: center;
+            @include tamanos(40px,40px );
+            padding: 2px;
+            box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+            margin-right: 5px;
+        }
+    }
+    p{
+        padding: 0px 0px 30px 15px;
+        font-weight: 300;
+        text-align: justify;
+    }
+    ul {
+        padding: 0px 0px 30px 15px;
+        font-weight: 300;
+        text-align: justify;
+    }
+}
+
+.contenedor-sobre-nosotros{
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+}
+
+.titulo {
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+ /*Body*/
+ body{
+    background-image: repeating-linear-gradient(blue, green, #59072D);
+}
+
+section {
+        padding: 3.9rem 0;
+        overflow: hidden;  
+        }
+
+p {
+    font-size: 1.3rem;
+    color: white;
+    }
+
+img {
+    width: 100%;
+    max-width: 100%;
+    }
+
+a {
+    text-decoration: none;
+    }
+
+
+
+
+.h2-sub {
+        font-size: 2rem;
+        font-family: $font_titulo1, sans-serif;
+        color: deepskyblue;
+        font-weight: 600;
+        line-height: .4; 
+        }
+
+.fil {
+    text-transform: uppercase;
+    font-size: 3rem;
+    }
+
+.head{
+    color: white;
+    font-size: 5.7rem;
+    font-family: $font_titulo2, sans-serif;
+    text-transform: uppercase;
+    font-weight: 1000;
+   
+}
+
+.he-des {
+    h5 {
+            color: deepskyblue;
+            font-size: 1.4rem;
+            font-weight: 100;
+            text-transform: uppercase;
+            margin-bottom: 1.2rem;
+            letter-spacing: 3px;
+            margin-right: -3px;
+        }
+}
+
+
+.global {
+        text-align: center;
+        .h2-sub {
+            letter-spacing: -1px;
+            line-height: .42;
+        }
+        }
+
+.dis-sto{
+    .card {
+        width: 290px;
+        height: 464px;
+        background: rgba(211, 211, 211, 0.199);
+        position: absolute;
+        transition: .3s ease-in-out;
+        cursor: pointer;
+        box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.3);
+      }
+      
+      #c1 {
+        background-image: url(https://www.ole.com.ar/2020/10/05/-UC5h6rbU_340x340__1.jpg);
+        background-size: cover;
+      }
+      
+      #c2 {
+        background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Maradona-Mundial_86_con_la_copa.JPG/698px-Maradona-Mundial_86_con_la_copa.JPG);
+        background-size: cover;
+    }
+      
+      #c3 {
+        background-image: url(https://statics.forbesargentina.com/2022/12/crop/63a1aa07f3f5c__822x822.webp);
+        background-size: cover;
+      }
+      
+      #c4 {
+        background-image: url(https://cdn.benzinga.com/files/imagecache/story_image_685x375C/images/story/2022/12/15/shutterstock_2204743111.jpg?crop=smart&height=375&width=685&optimize=medium&dpr=1&auto=webp);
+        background-size: contain;
+        }
+      
+      .main:hover #c1 {
+        transform: translateX(-100px) rotate(-40deg);
+      }
+      
+      .main:hover #c2 {
+        transform: translateX(-50px) rotate(-30deg);
+      }
+      
+      .main:hover #c3 {
+        transform: translateX(0) rotate(-20deg);
+      }
+      
+      .main:hover #c4 {
+        transform: translateX(50px) rotate(-10deg);
+      }
+      
+      #c1:hover {
+        transform: translateX(-200px) rotate(0deg) !important;
+      }
+      
+      #c2:hover {
+        transform: translateX(-150px) rotate(0deg) !important;
+      }
+      
+      #c3:hover {
+        transform: translateX(-100px) rotate(0deg) !important;
+      }
+      
+      #c4:hover {
+        transform: translateX(50px) rotate(0deg) !important;
+      }
+      
+      .main {
+        display: grid;
+        height: 50vmax;
+        place-items: center;
+      }
+        .global {
+            margin-top: 6rem;
+        }
+        .hea-dark {
+            color: white;
+            font-family: $font_titulo2;
+            font-size: 4rem;
+            letter-spacing: .3rem;
+            margin-right: 1.7rem;
+        }
+        div{
+            p{
+                font-size: 1.3rem;
+                color: white;
+                font-family: $font_titulo2;
+                    
+            }
+        }
+    }
+
+
+.image-group {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1rem;
+}
+
+.res-info {
+    text-align: center;
+    }
+
+.res-des {
+    margin-bottom: 3rem;
+        p {
+            line-height: 1.6;
+            margin-bottom: 2.4rem
+        }
+    }
+
+.taste {
+    background: url("../img/Estadio_Monumental_Mundial_78.jpg") center no-repeat;
+    background-size: cover;
+    }
+
+.bt {
+    min-height: 65vh;
+    display: flex;
+    align-items: center;
+}
+
+
+.disco {
+    .res-des {
+        padding-top: 3rem;
+        margin-bottom: 0;
+    }
+    
+
+}
+    
+.pb {
+    background: url("../img/estadio_azteca.jpg") center no-repeat;
+    background-size: cover;
+}
+
+.pb2 {
+    background: url("../img/estadio_lusail.avif") center no-repeat;
+    background-size: cover;
+}
+
+/*FOOTER*/
+
+footer {
+    padding: 7.9rem 0;
+    background-color: #121212;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+.footer-content {
+    overflow: hidden;
+    h4 {
+        font-size: 1.9rem;
+        text-transform: uppercase;
+        font-weight: 100;
+        letter-spacing: 3px;
+        margin-bottom: 3rem;
+    }
+    .circle{
+        margin: 2.4rem 0;
+    }
+}
+
+.footer-content-about {
+    margin-bottom: 5.4rem;
+    p {
+        line-height: 2;
+    }
+}
+
+.social-icons {
+    list-style: none;
+    margin-bottom: 5.4rem;
+    display: flex;
+    justify-content: center;
+    i {
+        font-size: 1rem;
+        color: deepskyblue;
+        padding: .8rem 2rem;
+        
+    }
+}
+
+.social-icons i:hover,
+.social-icons{
+    i:focus {
+    color: deepskyblue;
+}
+} 
+
+.news-form {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+}
+
+.news-input {
+    width: 100%;
+    max-width: 25rem;
+    padding: 1rem;
+    border-radius: .4rem;
+}
+
+.news-btn {
+    background: #c10000a2;
+    border: none;
+    color: #252525;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 1px .6rem;
+    position: absolute;
+    top: 30%;
+    margin-left: 20.5rem;
+    border-radius: 10%;
+}
+
+@media screen and (min-width: 900px){
+    
+    .h2-sub {
+        font-size: 3rem;
+    }
+
+    .fil {
+        font-size: 3rem;
+    }
+    .head {
+        font-size: 5.7rem;
+        letter-spacing: .2rem;
+    }
+
+    .res-info {
+        display: flex;
+        align-items: center;
+    }
+
+    .res-info > div {
+        flex: 1;
+    }
+
+    .pad-rig {
+        padding-right: 7rem;
+    }
+
+    
+    .footer-content {
+        max-width: 77.5rem;
+        margin: auto;
+    }
+
+    .footer-content-about {
+        max-width: 51.3rem;
+        margin:  0 auto 5.4rem;
+    }
+
+    .footer-div{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .social-media,
+    .news-form {
+        width: 100%;
+        max-width: 27.3rem;
+        margin: 0 1rem;
+    }
+
+   .news-btn {
+       margin-left: 7.5rem;
+   }
+    
+}
+
+@media (min-width: 768px){
+    .bg-dark{
+        background-color: grey;
+        }
+    }
+
+
+    @media screen and (max-width:900px){
+   
+        .hero {
+            @include tamanos(100%,70vh );
+            display: flex;
+            align-items: center;
+            text-align: center;
+                .head {
+                color: white;
+                font-size:4rem;
+                font-family: $font_titulo3;
+                text-transform: uppercase;
+                font-weight: 1500;
+                letter-spacing: 1rem;
+            }
+            }
+            .dis-sto{
+                .hea-dark {
+                color: white;
+                font-family: $font_titulo2;
+                font-size: 2.4rem;
+                letter-spacing: .3rem;
+                margin-right: 1.7rem;
+            }
+            }
+            
+            .head{
+                color: white;
+                font-size: 3.7rem;
+                font-family: $font_titulo2, sans-serif;
+                text-transform: uppercase;
+                font-weight: 1000;
+               
+            }
+    }
+
+    @media screen and (max-width:512px){
+        .hero {
+            @include tamanos(100%,70vh );
+            display: flex;
+            align-items: center;
+            text-align: center;
+                .h2-sub {
+                    text-transform: uppercase;
+                    font-size: 1rem;
+                    letter-spacing: 1rem;
+                }
+                .head {
+                font-size:2rem;
+                letter-spacing: 1rem;
+            }
+            .he-des{
+                h5 {
+                    color: deepskyblue;
+                    font-size: 1rem;
+                    font-weight: 100;
+                    text-transform: uppercase;
+                    margin-bottom: 1.2rem;
+                    letter-spacing: 3px;
+                    margin-right: -3px;
+                }
+
+            }
+            }
+
+            .head{
+                font-size: 1.7rem;
+            }
+    
+
+        .imagen-about-us{
+            margin-bottom: 60px;
+            width: 99%;
+        }
+    
+        .sobre-nosotros {
+            .contenido-textos{
+            width: 95%;
+            }
+        }
+        .dis-sto{
+            .card {
+                width: 240px;
+                height: 384px;
+                background: rgba(211, 211, 211, 0.199);
+                position: absolute;
+                transition: .4s ease-in-out;
+                cursor: pointer;
+                box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.3);
+              }
+              #c1 {
+                display: none;
+              }
+              
+              #c2 {
+                display: none;
+            }
+              
+              #c3 {
+                display: none;
+              }
+              
+            #c4 {
+                background-image: url(https://cdn.benzinga.com/files/imagecache/story_image_685x375C/images/story/2022/12/15/shutterstock_2204743111.jpg?crop=smart&height=375&width=685&optimize=medium&dpr=1&auto=webp);
+                background-size: contain;
+                }
+                .main:hover #c1 {
+                    display: none;
+                  }
+                  
+            .main:hover #c2 {
+                display: none;
+                  }
+                  
+            .main:hover #c3 {
+                display: none;
+                  }
+                  
+            .main:hover #c4 {
+                transform: none;
+                  }
+                  
+           
+
+              #c4:hover {
+                transform: translateX(50px) rotate(0deg) !important;
+              }
+              
+              .main {
+                display: grid;
+                height: 50vmax;
+                place-items: center;
+              }
+            }
+            
+        .btn{
+            font-family: $font_titulo2;
+            width: 80vw;
+            height: 80px;
+            margin-bottom: 2rem;
+            
+            
+        }
+        
+        .social-icons {
+            display: block;
+            
+            i {
+                font-family: $font_titulo4;
+                padding: .8rem 2rem;
+                margin-top: 2rem;
+                
+            }
+        }
+        .news-btn {
+            margin-left: 7rem;
+            background-color: deepskyblue;
+            color: white;
+        }
+    }
+    
+        
+        
+    
+    
+    
+    
+
+
+
+
+
+
+
+        

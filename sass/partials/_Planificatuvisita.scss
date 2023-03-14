@@ -1,0 +1,91 @@
+
+$font_titulo1: 'Poppins';
+$font_titulo2: 'Montserrat';
+$font_titulo3: 'Anton';
+$font_titulo4: 'Sarabun';
+
+@mixin tamanos ($ancho, $alto){
+    width: $ancho;
+    height: $alto;
+ }
+
+.text-header{
+    .container{
+        .row{
+            .tit{
+            font-family: $font_titulo2;
+            font-size: 4rem;
+            }
+        }
+    }
+}
+
+
+
+@media screen and (max-width:900px){
+   
+    .contenedor-sobre-nosotros{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sobre-nosotros {
+        .contenido-textos{
+        width: 90%;
+        }
+    }
+
+    .imagen-about-us{
+        width: 99%;
+    }
+}
+
+@media screen and (max-width:512px){
+
+    .text-header{
+        .container{
+            .row{
+                .tit{
+                font-family: $font_titulo2;
+                font-size: 2rem;
+                margin-top: 60px;
+                }
+                p{
+                    font-size: .8rem;
+                }
+            }
+        }
+    }
+.btn{
+        font-family: $font_titulo2;
+        width: 80vw;
+        height: 80px;
+        text-align: center;
+        font-size: 5px;
+    }
+
+   .imagen-about-us{
+        margin-bottom: 60px;
+        width: 99%;
+    }
+
+    .sobre-nosotros {
+        .contenido-textos{
+        width: 99%;
+        }
+    } 
+}
+
+
+    
+
+    
+
+    
+    
+
+    
+ 
+
+
