@@ -67,7 +67,7 @@ $font_titulo4: 'Sarabun';
         .arab_text_m{
             margin-top: 4rem;
             font-family: $font_titulo2;
-            margin-left: 110px;
+            
             font-size: 2rem;
         }
       }  
@@ -138,6 +138,7 @@ $font_titulo4: 'Sarabun';
     font-size: 2.5rem;
     color: white;
     margin-top: 40px;
+    padding-left: 40px;
 }
     
   }
@@ -181,7 +182,7 @@ $font_titulo4: 'Sarabun';
     }
     .barrilete_text{
         font-family: $font_titulo4;
-        margin-left: 110px;
+        
         font-size: 1.6rem;
     }
 }

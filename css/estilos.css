@@ -365,7 +365,6 @@
 .cont_arg div .arab_text_m {
   margin-top: 4rem;
   font-family: "Montserrat";
-  margin-left: 110px;
   font-size: 2rem;
 }
 
@@ -429,6 +428,7 @@
   font-size: 2.5rem;
   color: white;
   margin-top: 40px;
+  padding-left: 40px;
 }
 
 .diego_cup {
@@ -469,7 +469,6 @@
 }
 .cont_arg .barrilete_text {
   font-family: "Sarabun";
-  margin-left: 110px;
   font-size: 1.6rem;
 }
 
@@ -694,6 +693,7 @@
   font-size: 2rem;
   color: white;
   margin-top: 40px;
+  padding-left: 20px;
 }
 
 .kempes_cup {
@@ -734,7 +734,7 @@
 }
 .cont_arg .barrilete_text {
   font-family: "Sarabun";
-  margin-left: 110px;
+  padding-left: 20px;
   font-size: 1.6rem;
 }
 
@@ -779,6 +779,7 @@
   .cont_arg_der .hol_text {
     font-size: 1.5rem;
     margin-top: 40px;
+    padding-left: 20px;
   }
   .cont_arg .diego_cup .cupdiego_text {
     font-size: 1.5rem;

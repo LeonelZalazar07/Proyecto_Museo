@@ -142,6 +142,7 @@ $font_titulo4: 'Sarabun';
     font-size: 2rem;
     color: white;
     margin-top: 40px;
+    padding-left: 20px;
 }
     
   }
@@ -185,7 +186,7 @@ $font_titulo4: 'Sarabun';
     }
     .barrilete_text{
         font-family: $font_titulo4;
-        margin-left: 110px;
+        padding-left: 20px;
         font-size: 1.6rem;
     }
 }
@@ -252,6 +253,7 @@ $font_titulo4: 'Sarabun';
         .hol_text{
             font-size: 1.5rem;
             margin-top: 40px;
+            padding-left: 20px;
         }
         
       }
